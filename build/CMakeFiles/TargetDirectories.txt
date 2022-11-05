@@ -1,0 +1,7 @@
+/home/ubuntu/dhserver-v2/build/CMakeFiles/demonHelmet_lib.dir
+/home/ubuntu/dhserver-v2/build/CMakeFiles/demonHelmet.dir
+/home/ubuntu/dhserver-v2/build/CMakeFiles/check_git.dir
+/home/ubuntu/dhserver-v2/build/CMakeFiles/edit_cache.dir
+/home/ubuntu/dhserver-v2/build/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/dhserver-v2/build/src/CMakeFiles/edit_cache.dir
+/home/ubuntu/dhserver-v2/build/src/CMakeFiles/rebuild_cache.dir
