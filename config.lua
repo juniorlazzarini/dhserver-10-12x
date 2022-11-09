@@ -26,16 +26,16 @@ cleanProtectionZones = false
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25
-ip = "200.106.180.121"
+ip = "168.138.130.228"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
-motd = "Bem vindo ao Demon Helmet!"
+motd = "Bem vindo ao Warzera!"
 onePlayerOnlinePerAccount = true
 allowClones = false
-serverName = "Demon"
+serverName = "Warzera"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
 maxPacketsPerSecond = 25
@@ -73,8 +73,8 @@ deathLosePercent = -1
 -- Houses
 -- NOTE: set housePriceEachSQM to -1 to disable the ingame buy house functionality
 -- Periods: daily/weekly/monthly/yearly/never
-housePriceEachSQM = 1000
-houseRentPeriod = "never"
+housePriceEachSQM = 5000
+houseRentPeriod = "weekly"
 houseOwnedByAccount = false
 
 -- Item Usage
@@ -82,7 +82,7 @@ timeBetweenActions = 200
 timeBetweenExActions = 1000
 
 -- Push Delay
-pushDelay = 1000
+pushDelay = 700
 pushDistanceDelay = 1500
 
 -- Map
@@ -103,9 +103,9 @@ maxMarketOffersAtATimePerPlayer = 100
 
 -- MySQL
 mysqlHost = "127.0.0.1"
-mysqlUser = "nuser"
-mysqlPass = "Wd5S2q00Qu4c08"
-mysqlDatabase = "ot"
+mysqlUser = "superuser"
+mysqlPass = "x%Ot4aQ&C4eeZ660"
+mysqlDatabase = "server"
 mysqlPort = 3306
 mysqlSock = ""
 
