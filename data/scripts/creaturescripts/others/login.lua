@@ -22,8 +22,10 @@ local playerLogin = CreatureEvent("PlayerLogin")
 
 function playerLogin.onLogin(player)
 	local items = {
-		{2120, 1},
-		{2148, 3}
+		{2120, 1}, -- rope
+		{5710, 1}, -- light shovel
+		{7620, 20}, -- 20 mana pot
+		{2160, 5} -- 5 crystal coin
 	}
 	if player:getLastLoginSaved() == 0 then
 		player:sendOutfitWindow()
@@ -33,7 +35,22 @@ function playerLogin.onLogin(player)
 				backpack:addItem(items[i][1], items[i][2])
 			end
 		end
-		player:addItem(2050, 1, true, 1, CONST_SLOT_AMMO)
+		player:addItem(2510, 1, CONST_SLOT_RIGHT)
+		player:addItem(2460, 1, CONST_SLOT_HEAD)
+		player:addItem(2465, 1, CONST_SLOT_ARMOR)
+		player:addItem(2478, 1, CONST_SLOT_LEGS)
+		player:addItem(2643, 1, CONST_SLOT_FEET)
+		player:addItem(2173, 1, CONST_SLOT_NECKLACE)
+		player:addItem(11402, 1, false, 1, CONST_SLOT_STORE_INBOX)
+		-- inbox:addItem(11402, 1)
+		player:addItem(player:isSorcerer() and 2190 or player:isDruid() and 2182 or player:isPaladin() and 2389, 1)
+		if player:isKnight() then
+			player:addItem(8602, 1, CONST_SLOT_LEFT)
+			player:addItem(8601, 1)
+			player:addItem(2439, 1)
+		end
+		player:sendTextMessage(MESSAGE_STATUS_WARNING, "You received a Free Exercise Weapon of 75k charges! Check your store inbox.")
+		player:sendTextMessage(MESSAGE_STATUS_WARNING, "Welcome to " .. SERVER_NAME .. "!")
 	else
 		player:sendTextMessage(MESSAGE_STATUS_DEFAULT, "Welcome to " .. SERVER_NAME .. "!")
 		player:sendTextMessage(MESSAGE_STATUS_DEFAULT, string.format("Your last visit in ".. SERVER_NAME ..": %s.", os.date("%d. %b %Y %X", player:getLastLoginSaved())))

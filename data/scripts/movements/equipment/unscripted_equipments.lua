@@ -7096,33 +7096,21 @@ if not equipmentsTable then
 			itemid = 13826,
 			type = "equip",
 			slot = "ring",
-			vocation = {
-				{"None", true}
-			}
 		}, -- star ring
 		{
 			itemid = 13826,
 			type = "deequip",
 			slot = "ring",
-			vocation = {
-				{"None", true}
-			}
 		}, -- star ring
 		{
 			itemid = 13825,
 			type = "equip",
 			slot = "ring",
-			vocation = {
-				{"None", true}
-			}
 		}, -- star ring
 		{
 			itemid = 13825,
 			type = "deequip",
 			slot = "ring",
-			vocation = {
-				{"None", true}
-			}
 		}, -- star ring
 		{
 			itemid = 13760,
@@ -14793,6 +14781,57 @@ if not equipmentsTable then
 			slot = "hand"
 		}, -- small stone
 		
+		-- CUSTOM
+		{
+			itemid = 21253,
+			type = "equip",
+			slot = "ammo",
+			-- level = 100,
+			vocation = {
+				{"Paladin", true},
+				{"Royal Paladin"}
+			}
+		}, -- Paladin medal
+		{
+			itemid = 21253,
+			type = "deequip",
+			slot = "ammo"
+			-- level = 100
+		}, -- Paladin medal
+		{
+			itemid = 10137,
+			type = "equip",
+			slot = "ammo",
+			-- level = 200,
+			vocation = {
+				{"Sorcerer", true},
+				{"Druid", true, true},
+				{"Master Sorcerer"},
+				{"Elder Druid"}
+			}
+		}, -- Mage insignia
+		{
+			itemid = 10137,
+			type = "deequip",
+			slot = "ammo"
+			-- level = 200
+		}, -- Mage insignia
+		{
+			itemid = 10136,
+			type = "equip",
+			slot = "ammo",
+			-- level = 200,
+			vocation = {
+				{"Knight", true},
+				{"Elite Knight"}
+			}
+		}, -- Mage insignia
+		{
+			itemid = 10136,
+			type = "deequip",
+			slot = "ammo"
+			-- level = 200
+		}, -- Mage insignia
 	}
 end
 
